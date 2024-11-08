@@ -7,4 +7,5 @@ export interface Member {
   avatar: string;
   expertise: string[];
   bio: string;
+  linkedin: string;
 }

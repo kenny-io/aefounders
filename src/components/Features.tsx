@@ -1,49 +1,48 @@
-import React from 'react';
-import { Users, Building2, Calendar, MessageCircle, Shield, Rocket } from 'lucide-react';
+import { Beer, HandHeart, Coffee, MessageCircle, Shield, Rocket } from 'lucide-react';
 
 const features = [
   {
-    icon: Users,
-    title: 'Peer-to-Peer Support',
-    description: 'Connect directly with fellow founders in Dubai for mentorship and collaboration.'
+    icon: Beer,
+    title: 'We Hangout Often',
+    description: 'From William\'s backyard BBQs to Sundays on a yacht, and everything in between. We believe that meaningful connections and great conversations happen anywhere, with the right people.'
   },
   {
-    icon: Building2,
-    title: 'No VC Oversight',
-    description: 'A community-driven platform without management fees or external control.'
+    icon: HandHeart,
+    title: 'We Help Each Other',
+    description: 'Whether you need a co-founder, help with fundraising, navigating VC commitments, or just want to bounce ideas around - you\'ll meet a founder who\'s been there and done that.'
   },
   {
-    icon: Calendar,
-    title: 'Exclusive Events',
-    description: 'Access member-only events, workshops, and networking opportunities.'
+    icon: Coffee,
+    title: 'Zero Corporate BS',
+    description: 'No VCs pulling strings, no bureaucracy, no hidden agendas. We\'re just a group of founders who believe in keeping things real and helping each other build amazing businesses in Dubai.'
   },
   {
     icon: MessageCircle,
-    title: 'Direct Communication',
-    description: 'Secure messaging and forums for authentic connections.'
+    title: 'We Talk Honestly',
+    description: 'Have honest, unfiltered conversations about the rollercoaster of every day life. Share your wins, challenges, and lessons learned with people who truly understand.'
   },
   {
     icon: Shield,
-    title: 'Vetted Community',
-    description: 'Quality-focused membership process ensures valuable interactions.'
+    title: 'We Care About Quality',
+    description: 'We take time to chat with potential members, not to be exclusive, but to ensure we\'re building a community where values align and everyone contributes to making it better for all.'
   },
   {
     icon: Rocket,
-    title: 'Growth Resources',
-    description: 'Access shared resources and tools for scaling your business.'
+    title: 'We Dream Big',
+    description: 'From our upcoming Founders Hub workspace to collaborative projects, we\'re dreaming big. The sky\'s the limit.'
   }
 ];
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 bg-gray-50">
+    <section id="activities" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            Why Join AEFounders?
+            Thinking of joining?
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            A community built by founders, for founders
+            Here are some of the things you can expect from us.
           </p>
         </div>
 
@@ -55,9 +54,9 @@ export default function Features() {
                 key={index}
                 className="relative group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 blur"></div>
+                <div className="absolute -inset-0.5 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 blur"></div>
                 <div className="relative bg-white p-6 rounded-xl">
-                  <Icon className="h-8 w-8 text-blue-600" />
+                  <Icon className="h-8 w-8 text-gray-600" />
                   <h3 className="mt-4 text-xl font-semibold text-gray-900">
                     {feature.title}
                   </h3>

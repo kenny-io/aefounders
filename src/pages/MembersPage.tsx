@@ -2,39 +2,7 @@ import { useState } from 'react';
 import { Search } from 'lucide-react';
 import MemberCard from '../components/members/MemberCard';
 import { Member } from '../types/member';
-
-const members: Member[] = [
-  {
-    id: 1,
-    name: 'Sarah Al-Rashid',
-    title: 'Founder & CEO',
-    company: 'TechVista Dubai',
-    location: 'Dubai Marina',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&h=200&q=80',
-    expertise: ['Technology', 'AI', 'Startups'],
-    bio: 'Building the future of AI-powered analytics for businesses in MENA.'
-  },
-  {
-    id: 2,
-    name: 'Ahmed Hassan',
-    title: 'Co-founder',
-    company: 'FinFlow',
-    location: 'Business Bay',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80',
-    expertise: ['Fintech', 'Banking', 'Blockchain'],
-    bio: 'Revolutionizing financial services through blockchain technology.'
-  },
-  {
-    id: 3,
-    name: 'Priya Sharma',
-    title: 'Founder',
-    company: 'EcoTech Solutions',
-    location: 'DIFC',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&h=200&q=80',
-    expertise: ['Sustainability', 'CleanTech', 'IoT'],
-    bio: 'Creating sustainable solutions for smart cities.'
-  }
-];
+import members from '../members.json';
 
 const allExpertise = Array.from(new Set(members.flatMap(member => member.expertise))).sort();
 

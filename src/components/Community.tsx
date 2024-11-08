@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Community() {
   return (
     <section id="community" className="py-24 bg-white">
@@ -7,25 +5,25 @@ export default function Community() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Join Dubai's Most Exclusive Founder Community
+              We have big plans for the community
             </h2>
             <p className="mt-3 max-w-3xl text-lg text-gray-500">
-              Connect with like-minded founders who are building the future of technology and business in Dubai.
+              Looking to the future, here are some of the things we have on our radar.
             </p>
             
             <div className="mt-12 space-y-10">
               {[
                 {
-                  title: "Peer-to-Peer Learning",
-                  description: "Learn from experienced founders who've been through the challenges you're facing."
+                  title: "AEF Hub",
+                  description: "A place to stay connected during work. If you work from home or need a break from the office, you’ll have the Hub available to work from."
                 },
                 {
-                  title: "Exclusive Events",
-                  description: "Access member-only workshops, networking events, and knowledge sharing sessions."
+                  title: "Impact Project",
+                  description: "A project that will help us give back to the community. We haven't decided what yet, but we'll keep you posted."
                 },
                 {
-                  title: "Resource Sharing",
-                  description: "Get access to shared resources, tools, and best practices from the community."
+                  title: "Targeted Events",
+                  description: "We'll be hosting regular events in the interest of our members to bring you in the same room as the people you need to meet."
                 }
               ].map((item, index) => (
                 <div key={index} className="relative">
@@ -51,6 +49,16 @@ export default function Community() {
               className="rounded-lg shadow-lg object-cover mt-8"
               src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80"
               alt="Collaboration"
+            />
+            <img
+              className="rounded-lg shadow-lg object-cover"
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
+              alt="Team Discussion"
+            />
+            <img
+              className="rounded-lg shadow-lg object-cover mt-8"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+              alt="Networking Event"
             />
           </div>
         </div>

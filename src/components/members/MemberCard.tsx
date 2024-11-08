@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Briefcase } from 'lucide-react';
+import { MapPin, Briefcase, Linkedin } from 'lucide-react';
 import { Member } from '../../types/member';
 
 interface MemberCardProps {
@@ -42,6 +42,17 @@ export default function MemberCard({ member }: MemberCardProps) {
               {exp}
             </span>
           ))}
+        </div>
+        <div className="mt-4">
+          <a 
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800"
+          >
+            <Linkedin className="h-4 w-4 mr-1" />
+            
+          </a>
         </div>
       </div>
     </div>
